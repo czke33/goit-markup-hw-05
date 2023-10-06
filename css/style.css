@@ -155,21 +155,28 @@ a {
     border-radius: 2px;
 }
 
-/*--a:link,
+a:link,
 a:hover {
     color: var(--link-hover-color);
 }
 
 a:focus {
     color: var(--link-hover-color);
-}--*/
+}
 
 .nav-link {
     cursor: poiter;
 }
-.list-class a:not(:last-child):hover{
-color: var(--link-hover-color);
+
+/*--.list-class ul>li:last-child a:hover {
+    color: red;
 }
+/*--a:last-child:hover{
+ color: var(--grey-text-color);
+}
+/*--.list-class a:not(:last-child):hover{
+color: var(--link-hover-color);
+}--*/
 
 /*--Contact first page--*/
 .contact {
