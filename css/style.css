@@ -168,16 +168,6 @@ a:focus {
     cursor: poiter;
 }
 
-/*--.list-class ul>li:last-child a:hover {
-    color: red;
-}
-/*--a:last-child:hover{
- color: var(--grey-text-color);
-}
-/*--.list-class a:not(:last-child):hover{
-color: var(--link-hover-color);
-}--*/
-
 /*--Contact first page--*/
 .contact {
     display: flex;
