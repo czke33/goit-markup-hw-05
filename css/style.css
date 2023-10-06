@@ -53,7 +53,7 @@ a {
     border-bottom-width: 1px;
     border-color: #ececec;
     flex-wrap: nowrap;
-    max-width: 1600px;
+    
 }
 
 .webstudio-container {
@@ -144,6 +144,7 @@ a {
     text-decoration: none;
 }
 
+
 .current {
     color: var(--link-hover-color);
 }
@@ -154,17 +155,20 @@ a {
     border-radius: 2px;
 }
 
-a:link,
+/*--a:link,
 a:hover {
     color: var(--link-hover-color);
 }
 
 a:focus {
     color: var(--link-hover-color);
-}
+}--*/
 
 .nav-link {
     cursor: poiter;
+}
+.list-class a:not(:last-child):hover{
+color: var(--link-hover-color);
 }
 
 /*--Contact first page--*/
@@ -552,7 +556,7 @@ a:focus {
     fill: #afb1b8;
 }
 
-icon:hover {
+.icon:hover {
     fill: #ffffff;
 }
 
@@ -570,12 +574,9 @@ icon:hover {
 
 .social-ellipse:hover {
     background-color: var(--link-hover-color);
-    fill: #f5f4fa;
-}
-
-.icon>use:hover {
     fill: #fff;
 }
+
 
 .hfive-text {
     padding-top: 30px;
