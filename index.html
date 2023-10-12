@@ -459,16 +459,23 @@
           <section class="subscribe">
             <p class="subscribe-text">Subscribe to the newsletter</p>
             <div class="footer-email-form">
-              <label for="email"></label>
-              <div class="email-input">
+              <label for="email">
                 <input
-                  placeholder="Email"
+                  placeholder="E-mail"
                   type="email"
                   name="email"
                   id="email"
                   class="input-mail"
                   pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
                 />
+              </label>
+              <div class="email-input">
+                <button type="submit">
+                  Subscribe
+                  <svg>
+                    <use xlink:href="./images/icons.svg#icon-icon_send"></use>
+                  </svg>
+                </button>
               </div>
             </div>
           </section>
