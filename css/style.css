@@ -387,15 +387,24 @@ a:focus {
 .checkbox-input:not(:checked) + svg {
   display: none;
 }
+.checkbox-input {
+  position: relative;
+}
 .icon-check > svg:not(:checked) {
   visibility: hidden;
 }
+
+/*--input:checked + label {
+  background-image: url("../images/icons/icon-check.svg");
+  background-size: cover;
+}--*/
+
 .icon-check {
-  left: 0;
+  left: -1.9px;
+  top: 4px;
   width: 16px;
   height: 16px;
   position: absolute;
-  top: calc(50%-8px);
 }
 .form-section {
   margin-bottom: 10px;
