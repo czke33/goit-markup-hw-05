@@ -383,13 +383,20 @@ a:focus {
 .modal-form .label-checkbox:hover {
   cursor: pointer;
 }
-/*--.checkbox-input > input:not(:checked) {
-  visibility: hidden;
-}--*/
-input:checked + svg {
+
+.checkbox-input:not(:checked) + svg {
   display: none;
 }
-
+.icon-check > svg:not(:checked) {
+  visibility: hidden;
+}
+.icon-check {
+  left: 0;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: calc(50%-8px);
+}
 .form-section {
   margin-bottom: 10px;
 }
