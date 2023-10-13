@@ -249,7 +249,7 @@ a:focus {
   100% {
     top: 294px;
   }--*/
-
+/*--Modal--*/
 .modal {
   position: fixed;
   width: 100vw;
