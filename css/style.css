@@ -376,7 +376,10 @@ a:focus {
   display: flex;
   align-items: center;
   position: relative;
+  flex-direction: row;
+  flex-wrap: nowrap;
   gap: 8px;
+  width: 20px;
   margin-left: 12px;
   margin-top: 20px;
 }
@@ -386,6 +389,7 @@ a:focus {
 
 .checkbox-input:not(:checked) + svg {
   display: none;
+  cursor: pointer;
 }
 .checkbox-input {
   position: relative;
@@ -393,7 +397,27 @@ a:focus {
 .icon-check > svg:not(:checked) {
   visibility: hidden;
 }
-
+.legend-terms {
+  display: flex;
+  flex-direction: row;
+  max-width: fit-content;
+  flex-wrap: nowrap;
+  width: 396px;
+  font-family: var(--heading-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 8px;
+}
+.checkbox-css {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: flex-end;
+}
+.checkbox-css:hover {
+  cursor: pointer;
+}
 /*--input:checked + label {
   background-image: url("../images/icons/icon-check.svg");
   background-size: cover;
