@@ -459,6 +459,9 @@ a:focus {
   height: 16px;
   width: 16px;
 }
+.modal-form .checkbox-input(:checked) {
+  display: none;
+}
 .feedback-label {
   display: flex;
   flex-direction: column;
@@ -476,6 +479,11 @@ a:focus {
   padding-bottom: 12px;
   padding-top: 12px;
   box-shadow: 0px 4px 4px 0px #00000026;
+}
+.button-modal {
+  display: flex;
+  justify-content: center;
+  width: 448px;
 }
 /*--second section first page--*/
 
