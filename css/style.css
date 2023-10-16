@@ -240,17 +240,22 @@ a:focus {
 .button1:hover {
   background-color: #188ce8;
 }
-/*--
-@keyframes moveinout {
+
+/*--Modal--*/
+.modal:not(.is-hidden) {
+  animation: fadeIn 250ms ease-in-out;
+}
+
+@keyframes fadeIn {
   0% {
-    top: 0;
+    opacity: 0;
   }
 
   100% {
-    top: 294px;
-  }--*/
+    opacity: 1;
+  }
+}
 
-/*--Modal--*/
 .modal {
   position: fixed;
   width: 100vw;
