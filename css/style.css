@@ -30,7 +30,10 @@ a {
 }
 
 .global-continer {
-  width: 1600px;
+  width: 100vw;
+}
+body {
+  width: 100vw;
 }
 
 .visually-hidden {
@@ -105,7 +108,9 @@ a {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  margin-left: 330px;
+  /*--margin-left: 330px;--*/
+  width: max-content;
+  justify-content: center;
 }
 
 .contact ul {
@@ -180,6 +185,49 @@ a:focus {
   color: var(--link-hover-color);
 }
 
+.tel {
+  display: inline-block;
+  width: max-content;
+}
+.mail-class,
+.tel-class {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: max-content;
+}
+.mail-class {
+  color: #fff;
+  padding-right: 40px;
+}
+
+.mail-class:hover .icon-nav {
+  fill: var(--link-hover-color);
+}
+
+.mail-class:hover .mail {
+  color: var(--link-hover-color);
+}
+
+.tel-class:hover .icon-nav {
+  fill: var(--link-hover-color);
+}
+
+.tel-class:hover .tel {
+  color: var(--link-hover-color);
+}
+.tel {
+  display: inline-block;
+  width: max-content;
+}
+.mail-class,
+.tel-class {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: max-content;
+}
+
 /*--first section first page Effective solutions--*/
 
 .first-section {
@@ -191,6 +239,7 @@ a:focus {
     ),
     url(../images/effective-solution.jpg);
   background-size: cover;
+  width: 100vw;
 }
 
 .first-section-container {
@@ -201,7 +250,7 @@ a:focus {
 }
 
 .head-text {
-  width: 646px;
+  /*--width: 646px;--*/
   padding-bottom: 30px;
 }
 
@@ -218,7 +267,7 @@ a:focus {
 .button1 {
   width: 200px;
   padding: 10px 19px 10px 21px;
-  height: 50 px;
+  height: 50px;
 }
 
 .button1 {
@@ -464,7 +513,8 @@ a:focus {
   height: 16px;
   width: 16px;
 }
-.modal-form .checkbox-input(:checked) {
+
+.modal-form.checkbox-input:checked {
   display: none;
 }
 .feedback-label {
@@ -1093,34 +1143,6 @@ a:focus {
   padding-bottom: 12px;
 }
 
-.mail-class {
-  color: #fff;
-  margin-right: 40px;
-}
-
-.mail-class:hover .icon-nav {
-  fill: var(--link-hover-color);
-}
-
-.mail-class:hover .mail {
-  color: var(--link-hover-color);
-}
-
-.tel-class:hover .icon-nav {
-  fill: var(--link-hover-color);
-}
-
-.tel-class:hover .tel {
-  color: var(--link-hover-color);
-}
-
-.mail-class,
-.tel-class {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .tel-text {
   color: #fff;
   padding-top: 12px;
@@ -1220,10 +1242,18 @@ a:focus {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   margin-left: 12px;
+  border: none;
 }
 .email-input svg {
   width: 24px;
   height: 24px;
   margin-left: 25px;
   fill: #fff;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+@media screen {
 }
